@@ -1,0 +1,48 @@
+.my-container{
+    position: relative;
+}
+.box-img{
+    position: relative;
+    border: 1px solid black;
+    height: 400px;
+    aspect-ratio: 1/1;
+}
+.card-img{
+    position: absolute;
+    top: 0;
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2.s;
+}
+
+.card-img.active{
+    opacity: 1;
+}
+.image{
+    width: 100%;
+    object-fit: contain;
+}
+.opac{
+    opacity: 0;
+}
+.container-controls{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    right: -6px;
+    z-index: 100;
+}
+.box-anteprime{
+    display: flex;
+    
+}
+.box-anteprime .card-img.active{
+    border:2px solid black
+}
+.box-anteprime .card-img{
+    width: calc((100% /5));
+}
